@@ -11,7 +11,10 @@
   "description": "",
   "dependencies": {
     "bullmq": "^5.40.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "ioredis": "^5.5.0",
+    "nodemailer": "^6.10.0",
     "otpcaptchagenerator": "^1.0.3"
   }
 }
