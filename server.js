@@ -6,9 +6,7 @@ const app = express();
 app.use(express.json());
 const PORT = process.env.PORT || 7777;
 
-const redisConnection = new Redis({
-    host: "127.0.0.1",
-    port: 6379,
+const redisConnection = new Redis(process.env.REDIS_URL, {
     maxRetriesPerRequest: null,
 });
 
