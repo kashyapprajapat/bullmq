@@ -2,6 +2,7 @@ const { Worker } = require("bullmq");
 const { Redis } = require("ioredis");
 const { sendEmail } = require("./service/emailservice"); 
 
+
 const redisConnection = new Redis(process.env.REDIS_URL, {
     maxRetriesPerRequest: null,
 });

@@ -1,6 +1,7 @@
 const express = require("express");
 const { Queue } = require("bullmq");
 const { Redis } = require("ioredis");
+require("dotenv").config();
 
 const app = express();
 app.use(express.json());
