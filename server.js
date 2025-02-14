@@ -15,7 +15,7 @@ const redisConnection = new Redis(process.env.REDIS_URL, {
 // Rate Limiting (7 requests per minute per IP)
 const limiter = rateLimit({
     windowMs: 60 * 1000,
-    max: 7, 
+    max: 700, 
     message: { error: "Too many requests, please try again later." },
 });
 app.use(limiter);
